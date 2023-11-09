@@ -13,7 +13,7 @@
     <header>
       <div class="icon-search-filter">
 
-      <a href="#" class="brand-icon"><img src="img/logo.png" alt="Fitness"></a>
+      <a href="#" class="brand-icon"><img src="logo.png" alt="Fitness"></a>
 
       <div class="search-container">
       <input type="text" class="search-input" placeholder="Search here"><span><i class="fa fa-search search-icon" ></i></span>
@@ -111,139 +111,6 @@
         <h1 class="title1">Our Products:</h1>
         <div class="products">
         </div>
-        <div class="register">
-          <button onclick="createRegistrationForm()">Register</button>
-        </div>
-    </div>
-
-    <div>
-
-    </div>
-   
-
-
-    
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Shop</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    
-</head>
-<body>
-    <header>
-      <div class="icon-search-filter">
-
-      <a href="#" class="brand-icon"><img src="img/logo.png" alt="Fitness"></a>
-
-      <div class="search-container">
-      <input type="text" class="search-input" placeholder="Search here"><span><i class="fa fa-search search-icon" ></i></span>
-      </div>
-
-      <div class="filter-container">
-        <i class="fa fa-filter dropfilter" aria-hidden="true"></i> 
-      <!-- Filter buttons for price range -->
-      <div class="price-range" style="right:0;">
-        <span> By price</span> 
-      <span class="filter-btn" onclick="filterByPriceRange(0, 20)">$0 - $20</span>
-      <span class="filter-btn" onclick="filterByPriceRange(20, 50)">$20 - $50</span>
-      <span class="filter-btn" onclick="filterByPriceRange(50, 100)">$50 - $100</span>
-      </div>
-      </div>
-      
-    </div>
-
-        <nav class="navbar navbar-expand-lg navbar-light ">
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-              
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#cardiomachines">Fitness Machines</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#cardiomachines">Cardio Machines</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#accessories">Accessories</a>
-                </li> 
-                <li class="nav-item">
-                  <a class="nav-link" href="#about-us">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Contacts">Contact</a>
-                </li>
-              </ul>
-
-             <div class="nav-social">
-              <i class="fa fa-facebook">
-                <a href="#"></a>
-              </i>
-              <i class="fa fa-instagram">
-                <a href="#"></a>
-              </i>
-              <i class="fa fa-twitter">
-                <a href="#"></a>
-              </i>
-            </div>
-            </div>
-        </nav>
-    </header>
-<!-- carousel -->
-    <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://media.istockphoto.com/id/1084978504/photo/sport-equipment-creative-flat-lay-of-sport-and-fitness-equipments-on-blue-with-copy-space.jpg?s=612x612&w=0&k=20&c=cfDhZtN8guHPtvYOfkujzZHI7bPBMFEpRIZ4N-4Fchk=" class="d-block w-100 " alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://media.istockphoto.com/id/1029243348/photo/senior-man-on-his-mountain-bike-outdoors.jpg?s=612x612&w=0&k=20&c=uAbz4jLGcnvwz9FQJU4ZGPNvlaMLu_uuWUuleuVjEYw=" class="d-block w-100 " alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://media.istockphoto.com/id/1405074118/photo/close-up-of-hand-holding-metal-dumbbell-from-the-rack-in-the-gym-hand-of-muscular-man-picking.jpg?s=612x612&w=0&k=20&c=FmRnAE7px1rg5L0xauHNq3Y5z_ywyde_Fe0Fxz4eeJA=" class="d-block w-100 " alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div> -->
-    <!-- banner -->
-    <!-- <div>
-    <section class="hero">
-        <div class="hero-content">
-        <h1>Be Fit Be Great</h1>
-        <h2>Shape your body</h2>
-        <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&q=80&w=2069&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100%" height="700px">
-        </div>
-    </section>
-    </div> -->
-
-    <div>
-        <h1 class="title1">Our Products:</h1>
-        <section class="products">
-           
-            
-         
-        </section>
         <div class="register">
           <button onclick="createRegistrationForm()">Register</button>
         </div>
