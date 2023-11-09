@@ -134,8 +134,7 @@ var products=[
   }
 ];
 
-    const searchInput = document.querySelector('.search-input');
-    searchInput.addEventListener('input', filterProducts);
+
     const productContainer = document.querySelector('.products');
     populateData(products);
 
@@ -157,6 +156,8 @@ function createItem(product){
     productContainer.innerHTML+= el
 }
 
+ const searchInput = document.querySelector('.search-input');
+    searchInput.addEventListener('input', searchProducts);
 
 // Function to filter products based on the search input
 function searchProducts() {
